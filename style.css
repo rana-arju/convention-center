@@ -6,6 +6,53 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primaryColor: #3F87F5;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+
+}
+
+.btn {
+    background-color: #fff;
+    color: var(--primaryColor);
+    padding: 8px 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.btn:hover {
+    color: var(--primaryColor);
+}
+
+/* Header Section Style */
+nav li a{
+    font-size: 16px;
+    font-weight: 500;
+}
+.hero-section {
+    height: 550px;
+}
+
+.slider-img {
+    height: 100%;
+}
+
+.slide-cap {
+    margin-bottom: 80px;
+}
+.slide-cap h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.slide-cap p{
+    font-size: 16px;
+    font-weight: 300;
 }
