@@ -32,11 +32,18 @@ button {
     color: var(--primaryColor);
 }
 
+.section-title {
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
 /* Header Section Style */
-nav li a{
+nav li a {
     font-size: 16px;
     font-weight: 500;
 }
+
 .hero-section {
     height: 550px;
 }
@@ -48,11 +55,112 @@ nav li a{
 .slide-cap {
     margin-bottom: 80px;
 }
-.slide-cap h1{
+
+.slide-cap h1 {
     font-size: 40px;
     font-weight: 600;
 }
-.slide-cap p{
+
+.slide-cap p {
     font-size: 16px;
     font-weight: 300;
+}
+
+/* Pricing Table Section Style */
+section.pricing {}
+
+.pricing .card {
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.2s;
+
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.featured {
+    background-image: linear-gradient(145deg, #f81f01 0%, #ee076e 100%);
+    color: #fff;
+    margin-top: -3rem;
+
+}
+
+.featured-btn {
+    background-color: #fff;
+    border-radius: 30px;
+    color: #f81f01;
+}
+
+.featured-btn a {
+    color: #f81f01;
+}
+
+.pricing hr {
+    margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+    margin: 0.5rem 0;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    font-weight: bold;
+}
+
+.pricing .card-price {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.pricing .card-price .period {
+    font-size: 18px;
+}
+
+.pricing ul li {
+    margin-bottom: 14px;
+}
+
+.pricing .text-muted {
+    opacity: .9;
+}
+
+.badge-hot {
+    color: #fff;
+    background-color: #3F87F5;
+    font-size: 18px;
+    font-weight: 800;
+    left: 90%;
+}
+
+.pricing .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: all 0.2s;
+    background-color: #FEF5FA;
+}
+
+.pricing .btn:hover {
+    background-color: #fff;
+}
+
+.card-body p {
+    font-size: 15px;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+    .pricing .card:hover {
+        margin-top: -.25rem;
+        margin-bottom: .25rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .pricing .card:hover .btn {
+        opacity: 1;
+    }
 }
