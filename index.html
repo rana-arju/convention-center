@@ -57,9 +57,9 @@
             <div class="carousel-item active ">
                 <img src="images/banner 2.png" class="d-block w-100 slider-img " alt="Banner Image 1">
                 <div class="carousel-caption slide-cap">
-                    <h1>YOUR WEDDING ADVENTURE STARTS HERE</h1>
+                    <h1>WEDDING ADVENTURE</h1>
                     <p>Every bride and groom wants an incomparable wedding combined with fantasy and style.</p>
-                    <button type="button"><a href="#contact" class="btn">Book Now</a></button>
+                    <button type="button"><a href="#booking" class="btn">Book Now</a></button>
                 </div>
             </div>
             <div class="carousel-item ">
@@ -67,7 +67,7 @@
                 <div class="carousel-caption slide-cap">
                     <h1>Wedding Planner</h1>
                     <p>We create stunning, one-of-a-kind events produces and styled to perfection</p>
-                    <button type="button"><a href="#contact" class="btn">Book Now</a></button>
+                    <button type="button"><a href="#booking" class="btn">Book Now</a></button>
                 </div>
             </div>
             <div class="carousel-item ">
@@ -75,7 +75,7 @@
                 <div class="carousel-caption slide-cap">
                     <h1>We Are Getting Married</h1>
                     <p>January 30, 2022</p>
-                    <button type="button"><a href="#contact" class="btn">Book Now</a></button>
+                    <button type="button"><a href="#booking" class="btn">Book Now</a></button>
                 </div>
             </div>
 
@@ -217,7 +217,7 @@
         <h2 class="section-title text-center my-5">Frequently Asked Questions</h2>
         <div class="row ">
             <div class="col-md-6">
-                <div class="faq-left">
+            <div class="faq-left">
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -285,10 +285,12 @@
                 </div>
             </div>
         </div>
+    
     </section>
     <!-- Booking Section -->
     <section class="booking-area pt-5">
         <h2 class="section-title text-center my-5 text-black">Book now</h2>
+    
     <div id="booking" class="booking-section">
         <div class="section-center">
             <div class="container">
@@ -383,6 +385,17 @@
                             </form>
                         </div>
                     </div>
+                    <!-- Tost Area -->
+                    <div class="col-md-4 toast-area">
+                    <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <div class="me-2"><i class="fas fa-gift toast-icon"></i></div>
+                            <strong class="me-auto">20% off on next booking</strong>
+                            
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                    </div> 
+                </div>
                 </div>
             </div>
         </div>
@@ -410,5 +423,12 @@
 </footer>
     <!-- Bootstrap Javascript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    window.onload = (e) => {
+        let myToast = document.querySelector('.toast');
+        let bstoast = new bootstrap.Toast(myToast);
+        bstoast.show();
+    }
+</script>
 </body>
 </html>

@@ -281,6 +281,20 @@ nav ul li:hover a {
     opacity: 0.9;
 }
 
+/* Tost area */
+.toast-icon {
+    font-size: 25px !important;
+    color: #72B6FF;
+
+}
+
+.toast-area {
+    z-index: 9999;
+    position: static;
+    top: 50%;
+    right: 0;
+}
+
 /* Footer Section Style */
 footer {
     height: 200px;
@@ -436,10 +450,17 @@ footer {
         margin-bottom: 0 !important;
     }
 
-    .btn{
+    .btn {
         font-size: 13px;
     }
+
+    .section-title {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .faq-right {
+        margin-top: 20px;
+    }
 }
-@media only screen and (max-width: 396px){
-    
-}
+
