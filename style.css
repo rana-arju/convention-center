@@ -50,7 +50,7 @@ nav ul li:hover a {
 }
 
 .hero-section {
-    height: 550px;
+    height: 500px;
 }
 
 .slider-img {
@@ -282,7 +282,7 @@ nav ul li:hover a {
 }
 
 /* Footer Section Style */
-.footer-section {
+footer {
     height: 200px;
     background-color: #0B0D17;
 }
@@ -304,6 +304,7 @@ nav ul li:hover a {
     margin-bottom: 20px;
 }
 
+
 /* Responsive Style */
 
 /* Hover Effects on Card */
@@ -320,4 +321,125 @@ nav ul li:hover a {
     }
 }
 
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 1200px) {
+    .hero-section {
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 1124px) {
+    .hero-section {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .hero-section {
+        height: 350px;
+    }
+
+    .slide-cap {
+        margin-bottom: 40px;
+    }
+
+    .slide-cap h1 {
+        font-size: 30px;
+    }
+
+    .featured {
+        margin-top: -2.1rem;
+    }
+
+    .slide-cap p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-section {
+        height: 300px;
+    }
+
+    .slide-cap h1 {
+        font-size: 25px;
+    }
+
+    .slide-cap p {
+        font-size: 14px;
+    }
+
+    .order-change {
+        order: -1;
+    }
+
+    .faq-right {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .hero-section {
+        height: 250px;
+    }
+
+    .slide-cap {
+        margin-bottom: 20px;
+    }
+
+    .slide-cap h1 {
+        font-size: 20px;
+    }
+
+    .pricing {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .footer-area {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-left {
+        margin-top: 20px;
+    }
+
+    .footer-right {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .carousel-indicators [data-bs-target] {
+        display: none;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .slide-cap {
+        margin-bottom: 5px;
+    }
+
+    .slide-cap h1 {
+        font-size: 16px;
+    }
+
+    .slide-cap p {
+        font-size: 13px;
+    }
+
+    footer .title {
+        margin-bottom: 0 !important;
+    }
+
+    .btn{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 396px){
+    
+}
